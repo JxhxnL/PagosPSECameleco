@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;        
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --rojo: #ff0800;
+    --gris1: #6f6f6d;
+    --gris2: #393536;
+}
+
+body {
+    min-height: auto;
+    position: relative;
+    padding-bottom: 300px;    
+}
+
+.News {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    background-color: var(--gris2);
+}
+
+.News p{
+    color: white;
+    font-size: 14px;
+}
+
+.News i{
+    color: white;
+}
+
+.Head {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--gris1);
+}
+
+.Head img {
+    height: 25px;
+}
+
+.Home {
+    width: 100%;
+}
+
+.Home img{
+    width: 100%;
+}
+
+.d1 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--gris2);
+    margin-top: -10px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 340px;
+    background-image: url(img/Footer.png);
+    background-size: cover;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 200px;
+    gap: 120px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.box a{
+    color: white;
+    text-decoration: none;
+}
+
+.paso1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    height: auto;   
+    margin: 50px 0px;
+}
+
+.col1 {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.col1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.col1 p{
+    font-size: 20px;
+}
+
+.numero {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.num {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--rojo);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.num:hover{
+    transform: scale(1.06);
+    transition: transform 1s;
+}
+
+.Paso {
+    font-weight: bold;
+}
+
+.col2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.col2 img{
+    width: 200px;
+}
+
+.paso2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    height: auto;   
+    margin: 50px 0px;
+}
+
+.paso3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    height: auto;   
+    margin: 50px 0px;
+}
+
+.paso4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    height: auto;   
+    margin: 50px 0px;
+}
+
+.Tam img{
+    width: 545px;
+}
+
+@media only screen and (min-device-width: 180px) and (max-width: 731px) {
+    .col1 p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .numero {
+        justify-content: center;
+    }
+    .paso1 {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .paso2 {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .paso3 {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .paso4 {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .Tam img{
+        width: 70%;
+    }    
+    footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 640px;
+        background-image: url(../img/Footerm.png);
+        background-size: cover;
+    }    
+    .contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 180px;
+        gap: 80px;
+    }    
+    .Head {
+        justify-content: center;
+    }
+    body {
+        padding-bottom: 600px;    
+    }    
+}
