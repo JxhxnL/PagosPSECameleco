@@ -232,6 +232,10 @@ footer {
                 background-color 1s;
 }
 
+.space {
+    margin: 0px 40px 0px 0px;
+}
+
 @media only screen and (min-device-width: 180px) and (max-width: 731px) {
     .col1 p{
         font-size: 20px;
@@ -270,6 +274,7 @@ footer {
     .contacto {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         width: 100%;
         margin-top: 180px;
